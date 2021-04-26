@@ -67,16 +67,52 @@ public class ControlFlowExercises {
         }
 
         //  Powers Table
+
         // Wrote a for loop and just printed the questions before looping
         Scanner scanner = new Scanner(System.in);
         System.out.println("\n How many numbers do you want to see? ");
         int userInt = scanner.nextInt();
         System.out.println("Number | Squared | Cubed");
+        System.out.println("------ | ------- | -----");
 
         // Looping through numbers and squaring and cubing
         for (int i = 1; i <= userInt; i++){
-            System.out.println(i + "        " + (i * i) + "         " + "  " +(i * i * i));
+            System.out.println(i + "      | " + (i * i) + "       | " + (i * i * i));
+
         }
+//        Scanner scanner = new Scanner(System.in);
+//        String userChoice = "yes";
+//
+//        do {
+//            // Gets the input from the user
+//            System.out.print("Enter an integer: ");
+//            int integer = scanner.nextInt();
+//
+//            // Creates a header for Number, Square, Cubed
+//            String header = "Number  " + "Squared " + "Cubed   " + "\n"
+//                    + "======  " + "======= " + "=====   ";
+//            System.out.println(header);
+//
+//            int square = 0;
+//            int cube = 0;
+//
+//            String row = "";
+//            for (int i = 1; i <= integer; i++) {
+//
+//                square = i * i;
+//                cube = i * i * i;
+//
+//                row = i + "       " + square + "       " + cube;
+//                System.out.println(row);
+//            }
+//
+//            // Does user want to continue
+//            System.out.print("Continue? (yes/no): ");
+//            userChoice = scanner.next();
+//            System.out.println();
+//
+//        }
+//        while (!userChoice.equalsIgnoreCase("n"));
 
     }
 }
