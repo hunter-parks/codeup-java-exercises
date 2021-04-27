@@ -108,11 +108,12 @@ public class ControlFlowExercises {
 
         Scanner scanner = new Scanner(System.in);
         String userInput = "yes";
-        System.out.println("\n Please enter a a number grade");
 
-        int grade = scanner.nextInt();
 
         do {
+            System.out.println("\n Please enter a a number grade");
+
+            int grade = scanner.nextInt();
             if (grade <= 100 && grade >= 88) {
                 System.out.println("Congrats, You got an A!");
             } else if (grade <= 87 && grade >= 80) {
@@ -131,7 +132,7 @@ public class ControlFlowExercises {
                 userInput = scanner.next();
                 System.out.println();
 
-        } while (!userInput.equalsIgnoreCase("n"));
+        } while (userInput.equals("yes"));
     }
 }
 
