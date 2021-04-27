@@ -67,30 +67,19 @@ public class ControlFlowExercises {
         }
 
         //  Powers Table
-
-        // Wrote a for loop and just printed the questions before looping
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("\n How many numbers do you want to see? ");
-        int userInt = scanner.nextInt();
-        System.out.println("Number | Squared | Cubed");
-        System.out.println("------ | ------- | -----");
-
-        // Looping through numbers and squaring and cubing
-        for (int i = 1; i <= userInt; i++){
-            System.out.println(i + "      | " + (i * i) + "       | " + (i * i * i));
-
-        }
+        // A do-while loop to run through all user inputed integers and show them squared and cubed
 //        Scanner scanner = new Scanner(System.in);
 //        String userChoice = "yes";
 //
 //        do {
 //            // Gets the input from the user
-//            System.out.print("Enter an integer: ");
+//            System.out.print("\n What number would you like to go up to? ");
 //            int integer = scanner.nextInt();
+//            System.out.println("Here's your table!");
 //
 //            // Creates a header for Number, Square, Cubed
-//            String header = "Number  " + "Squared " + "Cubed   " + "\n"
-//                    + "======  " + "======= " + "=====   ";
+//            String header = "number | " + "squared | " + "cubed   " + "\n"
+//                    + "------  " + "------ " + "   ------   ";
 //            System.out.println(header);
 //
 //            int square = 0;
@@ -102,11 +91,11 @@ public class ControlFlowExercises {
 //                square = i * i;
 //                cube = i * i * i;
 //
-//                row = i + "       " + square + "       " + cube;
+//                row = i + "      | " + square + "      | " + cube;
 //                System.out.println(row);
 //            }
 //
-//            // Does user want to continue
+//            // Does the user want to continue, if so run this
 //            System.out.print("Continue? (yes/no): ");
 //            userChoice = scanner.next();
 //            System.out.println();
@@ -114,7 +103,35 @@ public class ControlFlowExercises {
 //        }
 //        while (!userChoice.equalsIgnoreCase("n"));
 
+
+        // The Number grade to Letter grade Exercise
+
+        Scanner scanner = new Scanner(System.in);
+        String userInput = "yes";
+        System.out.println("\n Please enter a a number grade");
+
+        int grade = scanner.nextInt();
+
+        do {
+            if (grade <= 100 && grade >= 88) {
+                System.out.println("Congrats, You got an A!");
+            } else if (grade <= 87 && grade >= 80) {
+                System.out.println("Nice Work! You got a B!");
+            } else if (grade <= 79 && grade >= 67) {
+                System.out.println("Keep it up! You got a C!");
+            } else if (grade <= 66 && grade >= 60) {
+                System.out.println("Almost there! You got a D!");
+            } else if (grade < 59) {
+                System.out.println("Keep pushing! Unfortunately you're failing!");
+            } else {
+                System.out.println("Invalid number! Please enter number 0-100! ");
+            }
+                // Asking if user wants to continue
+                System.out.println("Do you wish to enter another grade? (yes/no):");
+                userInput = scanner.next();
+                System.out.println();
+
+        } while (!userInput.equalsIgnoreCase("n"));
     }
 }
-
 
