@@ -14,5 +14,6 @@ public class ServerNameGenerator {
         int randomNouns = random.nextInt(nouns.length);
         System.out.println(nouns[randomNouns]);
 
+        System.out.println();
     }
 }
