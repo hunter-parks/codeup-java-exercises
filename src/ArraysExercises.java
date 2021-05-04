@@ -8,14 +8,20 @@ public class ArraysExercises {
         int[] numbers = {1,2,3,4,5};
         System.out.println(Arrays.toString(numbers));
 
-        // GOT FROM THE PERSON CLASS, AND ADDED A LENGTH OF 3
-        Person[] people = new Person[3];
 
-        for (Person person : people) {
-            System.out.println(person);
+        // CREATED A NEW STRING OF 3 PEOPLE
+        String[] Person = {"Jimmy Page", "Jimi Hendrix", "Eric Clapton"};
+
+//
+//        Person newGuy = new Person("Jimmy Page");
+//        System.out.println("The new guy is " + newGuy);
+
+        for (String element : Person){
+            System.out.println(element);
         }
 
-        System.out.println(Arrays.toString(people));
+
+//        System.out.println(Arrays.toString(people));
 
 
 
