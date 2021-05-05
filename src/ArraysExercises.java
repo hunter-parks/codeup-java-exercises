@@ -12,16 +12,13 @@ public class ArraysExercises {
         // CREATED A NEW STRING OF 3 PEOPLE
         String[] Person = {"Jimmy Page", "Jimi Hendrix", "Eric Clapton"};
 
-//
-//        Person newGuy = new Person("Jimmy Page");
-//        System.out.println("The new guy is " + newGuy);
-
         for (String element : Person){
             System.out.println(element);
         }
 
+        Person newGuy = new Person("Flea");
+        System.out.println("The new guy is " + newGuy);
 
-//        System.out.println(Arrays.toString(people));
 
 
 

@@ -1,4 +1,5 @@
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class ServerNameGenerator {
@@ -15,5 +16,8 @@ public class ServerNameGenerator {
         System.out.println(nouns[randomNouns]);
 
         System.out.println();
+
+       System.out.println("Here is your server name: " + randomAdjective + "-" + randomNouns);
+
     }
 }
