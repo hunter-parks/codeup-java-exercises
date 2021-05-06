@@ -37,6 +37,7 @@ public class MethodsExercises {
     }
 
 
+
     // ASK FOR USER INPUT TO BE IN A CERTAIN RANGE
 //    public static int getInteger(int min, int max) {
 //        Scanner scanner = new Scanner(System.in);
@@ -52,7 +53,6 @@ public class MethodsExercises {
 //    }
 
      //FACTORIAL PROBLEM
-
 
 
 

@@ -6,6 +6,7 @@ public class Bob {
         System.out.println("Hello. Meet Bob. He is a lackadaisical teen who responds with \n short answers and doesn't seem to care. I hope your conversation \n goes swimmingly");
         System.out.println();
         System.out.println("Please enter ?'s, yelling, and/or nothing here!");
+        System.out.println();
 
         while (true) {
             String bobsAnswers = scanner.nextLine();
