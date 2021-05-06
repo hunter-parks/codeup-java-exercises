@@ -32,7 +32,7 @@ public class Input {
         int userGuess;
         do {
             System.out.println("Please give me a number between " + min + "and " + max);
-            userGuess = getInt();
+            userGuess = scanner.nextInt();
         } while (userGuess > max | userGuess < min);
         System.out.println("Thank you for your input!");
         return userGuess;
