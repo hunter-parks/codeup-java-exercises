@@ -38,4 +38,26 @@ public class Input {
         return userGuess;
     }
 
+    public static int getInt() {
+        int userInput = scanner.nextInt();
+        return userInput;
+    }
+
+    // THE getDOUBLE METHOD
+    public static double getDouble(double min, double max) {
+        System.out.println("Please give me a decimal number between " + max + " and " + min);
+        double guessingTheDouble;
+
+        do {
+            guessingTheDouble = getDouble();
+        } while (guessingTheDouble > max | guessingTheDouble < min);
+        System.out.println("Thank you for your input!");
+        return guessingTheDouble;
+    }
+
+    public static double getDouble() {
+        double userInputDouble = scanner.nextDouble();
+        return userInputDouble;
+    }
+
 }
