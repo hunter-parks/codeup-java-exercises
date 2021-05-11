@@ -31,33 +31,43 @@ public class Input {
         max = 8;
         int userGuess;
         do {
-            System.out.println("Please give me a number between " + min + "and " + max);
+            System.out.println("Please give me a number between " + min + " and " + max);
             userGuess = scanner.nextInt();
         } while (userGuess > max | userGuess < min);
         System.out.println("Thank you for your input!");
         return userGuess;
     }
 
-    public static int getInt() {
-        int userInput = scanner.nextInt();
-        return userInput;
+//    public static int getInt() {
+//        int userInput = scanner.nextInt();
+//        return userInput;
+
+        // REFACTOR OF getInt METHOD
+        public static int getInt() {
+        scanner = new Scanner(System.in);
+        String intString = getString();
+        int input = Integer.valueOf(intString);
+        return input;
     }
 
     // THE getDOUBLE METHOD
     public static double getDouble(double min, double max) {
-        System.out.println("Please give me a decimal number between " + max + " and " + min);
+        System.out.println("Please give me a decimal number between " + min + " and " + max);
         double guessingTheDouble;
 
         do {
-            guessingTheDouble = getDouble();
+             guessingTheDouble = getDouble();
         } while (guessingTheDouble > max | guessingTheDouble < min);
         System.out.println("Thank you for your input!");
         return guessingTheDouble;
     }
 
+    // REFACTOR OF getDouble METHOD
     public static double getDouble() {
-        double userInputDouble = scanner.nextDouble();
-        return userInputDouble;
+        scanner = new Scanner(System.in);
+        String intDouble = getString();
+        double doubleInput = Double.valueOf(intDouble);
+        return doubleInput;
     }
 
 }
